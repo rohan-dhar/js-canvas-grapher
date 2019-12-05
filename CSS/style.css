@@ -1,0 +1,182 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	background-color: transparent;
+	font-family:Montserrat;
+	outline: none;
+}
+body{
+	overflow: hidden;
+}
+
+.btn{
+	display: block;
+	height: 36px;
+	border-radius: 20px;
+	width: 140px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 8pt;
+	border: 3px solid #2ecc81;
+	color: #2ecc81;
+	text-align: center;
+	top: 20px;
+	left: 20px;
+	margin: auto;
+	margin-top: 25px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	-webkit-transition: background-color 0.3s, color 0.3s;
+	-moz-transition: background-color 0.3s, color 0.3s;
+	-ms-transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover{
+	background-color: #2ecc81;
+	color: #fff;
+}
+
+#side-pane-open{
+	height: 40px;
+	width: 40px;
+	background-color: #2ecc81;
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	-webkit-transition: width 0.3s;
+	-moz-transition: width 0.3s;
+	-ms-transition: width 0.3s;
+	transition: width 0.3s;
+	cursor: pointer;
+}
+
+#side-pane-open img{
+	position: absolute;
+	height: 22px;
+	right: 8px;
+	top: 9px;
+}
+
+#side-pane-open:hover{
+	width: 55px;
+}
+
+#side-pane{
+	position: absolute;
+	height: 100%;
+	width: 600px;
+	top: 0px;
+	left: 0px;
+	background-color: #26263a;
+	color: #fff;
+}
+
+#side-pane header{
+	height: 50px;
+	background-color: #2ecc81;
+	line-height: 50px;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 10pt;
+	text-align: center;
+}
+
+#close{
+	height: 22px;
+	width: 22px;
+	position: absolute;
+	right: 12px;
+	top: 10px;
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	transform: rotate(-180deg);	
+	border-radius: 100%;
+	background-color: rgba(0,0,0,0.2);
+	padding: 4px;
+	-webkit-transition: background-color 0.3s;
+	-moz-transition: background-color 0.3s;
+	-ms-transition: background-color 0.3s;
+	transition: background-color 0.3s;
+	cursor: pointer;
+}
+
+#close:hover{
+	background-color: rgba(0,0,0,0.3);
+}
+
+.sub-head{
+	font-size: 11pt;
+	font-weight: 200;
+	font-style: italic;
+	margin-top: 25px;
+	margin-bottom: 3px;
+	text-align: center;
+}
+
+.text-inp{
+	height: 32px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #fff;
+	border-radius: 4px;
+	width: 200px;
+	border: none;
+	margin-top: 5px;
+	width: 173px;
+	margin-left: 5px;
+	font-size: 9.8pt;
+}
+
+#equation-inp{
+	width: 70%;
+}
+
+.label{
+	display: inline-block;
+	width: 50px;
+	text-align: right;
+	font-size: 9pt;
+	margin-left: 60px;
+}
+
+.x-end-label{
+	margin-left: 0px;	
+}
+
+#equation-info{
+	margin: auto;
+	display: inline-block;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+ol{
+	margin-top: 10px;
+}
+
+#equation-info h2{
+	font-size: 10pt;
+	font-weight: 300;
+}
+
+li{
+	position: relative;
+	display: inline-block;
+	width: 45%;
+	color: rgba(255,255,255,0.6);
+	margin-top: 7px;
+	text-align: left;
+	font-size: 9pt;
+	left: 10%;
+	font-weight: 300;
+}
+
+li b{
+	color: #fff;
+	font-weight: 300;
+}

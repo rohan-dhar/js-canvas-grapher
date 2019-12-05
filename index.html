@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	
+		<title>Grapher</title>
+		
+		<script type="text/javascript" src="JS/jquery.js"></script>		
+		
+		<script type="text/javascript" src="JS/script.js"></script>
+		
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	</head>
+	<body>	
+		<canvas id="graph"></canvas>
+		<div id="side-pane-open"> <img src="arrow.png"> </div>
+		<div id="side-pane">
+			<header>
+				Grapher
+				<img id="close" src="arrow.png"/>
+			</header>
+			<h3 class="sub-head">Enter an equation in the variable "x"</h3>
+			<div id="equation-info">
+				<h2>Operations & Constants Available</h2>
+				<ol>
+					<li><b>+</b> - Addition</li>
+					<li><b>-</b> - Subtraction</li>
+					<li><b>*</b> - Multiplication</li>
+					<li><b>/</b> - Division</li>
+					<li><b>sin(x)</b> - Sin of x</li>
+					<li><b>cos(x)</b> - Cos of x</li>
+					<li><b>tan(x)</b> - Tan of x</li>
+					<li><b>cosec(x)</b> - Cosec of x</li>
+					<li><b>sec(x)</b> - Sec of x</li>
+					<li><b>cot(x)</b> - Cot of x</li>
+					<li><b>mod(x)</b> - Mod of x</li>					
+					<li><b>pow(x, n)</b> - x to the power n<br>(Use fractional powers to find roots</li>
+
+					<li><b>exp(x)</b> - Exponential of x</li>
+					<li><b>log(x)</b> - Natural Log of x</li>
+					<li><b>pi</b> - The constant PI</li>
+					<li><b>e</b> - The contant e</li>
+				</ol>
+			</div>
+			<br>
+			<span class="label">y = </span> <input type="text" class = "text-inp" id="equation-inp" placeholder = "Equation here ...">
+			<h3 class="sub-head">Enter the range of x axis</h3>
+			<span class="label">Start</span> <input type="text" class = "text-inp" id="x-start-inp" value = "-10" placeholder="Starting value">
+			<span class="label x-end-label">End</span> <input type="text" class = "text-inp" id="x-end-inp" value = "10" placeholder="Ending value">
+			<button class="btn" id="draw">Draw Graph</button>
+		</div>
+		<div id="pane-opener"> <img src="IMG/side-arrow.png"> </div>
+	</body>
+</html>
